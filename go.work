@@ -1,3 +1,7 @@
-go 1.18
+go 1.21.3
 
-use "./17 - Aplicação de Linha de comando"
+use (
+	"./17 - Aplicação de Linha de comando"
+	"./19 - Testes Automatizados/1 - introdução"
+	"./19 - Testes Automatizados/2 - Avançado"
+)
