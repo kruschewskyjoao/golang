@@ -6,4 +6,5 @@ use (
 	"./19 - Testes Automatizados/2 - Avançado"
 	"./23 - Banco de dados"
 	"./24 - Crud básico"
+	./APP
 )
