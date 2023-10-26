@@ -1,6 +1,9 @@
 package rotas
 
-import "net/http"
+import (
+	"api/src/controllers"
+	"net/http"
+)
 
 var rotasPublicacoes = []Rota{
 	{
@@ -18,7 +21,7 @@ var rotasPublicacoes = []Rota{
 	{
 		URI:                 "/publicacoes/{publicacaoId}",
 		Metodo:              http.MethodGet,
-		Funcao:              controllers.BuscarPuclicacao,
+		Funcao:              controllers.BuscarPublicacao,
 		RequerAtutenticacao: true,
 	},
 	{
