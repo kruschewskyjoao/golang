@@ -1,11 +1,8 @@
 package controllers
 
-import (
-	"net/http"
-	"webapp/src/utils"
-)
+import "net/http"
 
-// CarregarTelaDeLogin vai carregar a tela de login
-func CarregarTelaDeLogin(w http.ResponseWriter, r *http.Request) {
-	utils.ExecutarTemplate(w, "login.html", nil)
+// FazerLogin utiliza o e-mail e senha do usuario para autenticar na aplicação
+func FazerLogin(w http.ResponseWriter, r *http.Request) {
+
 }
