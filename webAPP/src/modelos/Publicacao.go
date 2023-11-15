@@ -2,7 +2,7 @@ package modelos
 
 import "time"
 
-// Publicacao represente uma publicação feita pelo usuario
+// Publicacao representa uma publicação feita por um usuário
 type Publicacao struct {
 	ID        uint64    `json:"id,omitempty"`
 	Titulo    string    `json:"titulo,omitempty"`
@@ -10,5 +10,5 @@ type Publicacao struct {
 	AutorID   uint64    `json:"autorId,omitempty"`
 	AutorNick string    `json:"autorNick,omitempty"`
 	Curtidas  uint64    `json:"curtidas"`
-	CreatedAt time.Time `json:"createdAt,omitempty"`
+	CriadaEm  time.Time `json:"criadaEm,omitempty"`
 }

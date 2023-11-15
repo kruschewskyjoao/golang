@@ -14,7 +14,7 @@ func Logger(proximaFuncao http.HandlerFunc) http.HandlerFunc {
 	}
 }
 
-// Autenticar verifica a existencia de cookies
+// Autenticar verifica a existência de cookies
 func Autenticar(proximaFuncao http.HandlerFunc) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		if _, erro := cookies.Ler(r); erro != nil {
