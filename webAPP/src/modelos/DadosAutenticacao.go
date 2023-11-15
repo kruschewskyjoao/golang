@@ -1,6 +1,6 @@
 package modelos
 
-// DadosAutenticacao contém o id e o token do usuário autenticado
+// DadosAutenticacao contem o id e token do usuario
 type DadosAutenticacao struct {
 	ID    string `json:"id"`
 	Token string `json:"token"`

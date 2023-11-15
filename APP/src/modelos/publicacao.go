@@ -6,7 +6,6 @@ import (
 	"time"
 )
 
-// Publicacao representa uma publicação feita por um usuário
 type Publicacao struct {
 	ID        uint64    `json:"id,omitempty"`
 	Titulo    string    `json:"titulo,omitempty"`
@@ -14,7 +13,7 @@ type Publicacao struct {
 	AutorID   uint64    `json:"autorId,omitempty"`
 	AutorNick string    `json:"autorNick,omitempty"`
 	Curtidas  uint64    `json:"curtidas"`
-	CriadaEm  time.Time `json:"criadaEm,omitempty"`
+	CreatedAt time.Time `json:"createdAt,omitempty"`
 }
 
 // Preparar vai chamar os métodos para validar e formatar a publicação recebida
@@ -29,13 +28,11 @@ func (publicacao *Publicacao) Preparar() error {
 
 func (publicacao *Publicacao) validar() error {
 	if publicacao.Titulo == "" {
-		return errors.New("O título é obrigatório e não pode estar em branco")
+		return errors.New("O titulo é obrigatorio")
 	}
-
 	if publicacao.Conteudo == "" {
-		return errors.New("O conteúdo é obrigatório e não pode estar em branco")
+		return errors.New("O Conteudo é obrigatorio")
 	}
-
 	return nil
 }
 
